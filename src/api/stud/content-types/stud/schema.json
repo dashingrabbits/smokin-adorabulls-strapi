@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "studs",
+  "info": {
+    "singularName": "stud",
+    "pluralName": "studs",
+    "displayName": "Stud",
+    "description": "Stud dogs available for breeding"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "breed": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "achievements": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "Content for the About section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "storyTitle": {
+      "type": "string",
+      "required": true
+    },
+    "storyContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "storyImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "philosophyTitle": {
+      "type": "string",
+      "required": true
+    },
+    "philosophyContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "philosophyImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "featuredPuppies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::puppy.puppy"
+    }
+  }
+}

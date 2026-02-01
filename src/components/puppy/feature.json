@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_puppy_features",
+  "info": {
+    "displayName": "Feature",
+    "description": "Puppy feature highlight"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
